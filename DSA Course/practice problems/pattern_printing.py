@@ -113,6 +113,7 @@ for i in range(1,n+1):
     if i==1:
         print(" "*(n-i)+f"{i}"*n)
         print(" "*(n-i)+f"{i}"*n)
+        print(" "*(n-i)+f"{i}"*n)
     for j in range(1,n+1):
         print(" "*(n-i)+f"{j}E"*i)
 
@@ -123,6 +124,12 @@ for i in range(1,n+1):
         print(" "*(n-i)+f"{j}"*j)
 
 
-
+# for row in range(n):
+#         for col in range(n):
+#             if col == 0 or col == n - 1 or col == row:
+#                 print('*', end='')
+#             else:
+#                 print(' ', end='')
+#         print()
 
 
