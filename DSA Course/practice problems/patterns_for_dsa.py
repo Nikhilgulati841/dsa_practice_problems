@@ -75,35 +75,63 @@ for i in range(1,n+1):
 
     print()
 
+print("\nPattern 9 [Orientation of a 1 digit number]\n")
+num=1
+for i in range(1,n+1):
+    for j in range(1,i+1):
+        if len(list(str(num)))==1:
+            print(f" {num} ",end="")
+            num+=1
+        else:
+            print(f"{num} ",end="")
+            num+=1
+    print()
+
+
 print("\nPattern 10\n")
 
 for i in range(1,n+1):
     alpha=64
     for j in range(i,0,-1):
         print(f"{chr(alpha+j)} ",end="")
+        
     
 
     print()
 
 print("\nPattern 11\n")
-# for i in range(1,n+1):
-#     for j in range(1,i+1):
-#         print(" ",end="")
 
-#     for j in range(1,n-i+2):
-#         print(f"{i}",end="")
+for i in range(1,n+1):
+    for j in range(1,i+1):
+        print(" ",end="")
 
-#     print()
+    for j in range(1,n-i+2):
+        print(f"{i}",end="")
 
-
-
-# for i in range(1,n+1):
-#     print(" "*i,end="")
-#     for j in range(n+1-i,0,-1):
-#         print(f"{i}",end="")
-#     print()
+    print()
 
 
-# for i in range(n,0,-1):
-#     print(" "*(n-i)+f"{i}"*i)
-# print()
+
+for i in range(1,n+1):
+    print(" "*i,end="")
+    for j in range(n+1-i,0,-1):
+        print(f"{i}",end="")
+    print()
+
+
+for i in range(n,0,-1):
+    print(" "*(n-i)+f"{i}"*i)
+print()
+
+print("\nPattern 12\n")
+for i in range(1,n+1):
+    print(" "*(n-i),end="")
+    for j in range(1,i+1):
+        print(f"{j}",end="")
+        
+    for j in range(i-1,0,-1):
+        print(f"{j}",end="")
+    print()
+    
+
+print("\nPattern 13\n")
