@@ -1,4 +1,4 @@
-n=7
+n=4
 
 
 print("\nPattern 1\n")
@@ -135,3 +135,17 @@ for i in range(1,n+1):
     
 
 print("\nPattern 13\n")
+for i in range(n):
+    for j in range(n):
+        if j==n-i-1:
+            print("* ",end="")
+        else:
+            print("  ",end="")
+    for j in range(n-2,-1,-1):
+        if j==n-i-1:
+            print("* ",end="")
+        else:
+            print("  ",end="")
+    print()
+
+  
